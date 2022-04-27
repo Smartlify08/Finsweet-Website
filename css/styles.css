@@ -1,0 +1,781 @@
+/* main {
+    background: #1e1b1b;
+    background: #ff6433;
+    background: #661ce7;
+    background: #00d289;
+    background: #e2e6e9;
+    background: #f2f2f2;
+
+    style guide
+  }
+   */
+
+
+   
+
+   /*============== Global styles================ */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.5;
+    font-family: cursive;
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0px auto;
+    /* border: 2px solid #333; */
+  }
+
+  i {
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #1e1b1b;
+    font-size: 12px;
+  }
+
+  /* Global styles end */
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*=============Nav-bar  Section =============*/
+  .nav-bar .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .nav-bar .container .logo {
+    color: #1e1b1b;
+    text-transform: lowercase;
+    font-weight: bolder;
+  }
+  
+  .nav-bar .container .nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-bar .container .nav-right ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-bar li {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+  
+  .nav-right li:nth-of-type(6) {
+    border-right: 2px solid #ccc;
+  }
+  
+  .nav-bar .container .nav-right .roadAssistance {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #1e1b1b;
+  }
+  
+  .nav-bar .container .nav-right .roadAssistance .highlight {
+    font-weight: bold;
+  }
+  
+  .nav-bar .container .nav-right .roadAssistance img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* =================Branding section ============ */
+  
+  #branding .container {
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header #branding {
+    background: #fff;
+  }
+  
+  #branding .container .brand-content {
+    width: 50%;
+  }
+  
+  .brand-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1e1b1b;
+    /* Not a good practice tho */
+  }
+  
+  .brand-content button {
+    width: 150px;
+    height: 40px;
+    background: #ff6433;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .brand-content i {
+    color: #a4a4a4;
+  }
+  
+  .brand-content button a {
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .brand-content p {
+    font-size: 13px;
+    font-weight: 800;
+    color: #555;
+  }
+  
+  .brand-content h5 {
+    color: #1e1b1b;
+    margin-left: 20px;
+  }
+  #branding img {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .image-box{
+    position: relative;
+  }
+
+  .image-box .box-service{
+    position: absolute;
+    top: 2rem;
+    background: #fff;
+    border-radius: 2rem;
+    min-width:220px;
+    min-height: 70px;
+    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px rgb(221, 216, 216);
+    padding: 0.2rem;
+    left: -3rem;
+    color: rgba(30, 27, 27, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  
+
+  .icon{
+    min-width:50px;
+    min-height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    background: rgba(92, 186, 153, 1);
+    color:#fff;  
+  }
+
+
+  .icon .reduce{
+    font-size: 1rem;
+  }
+  
+
+  .box-rating{
+    /* border: 2px solid #333; */
+    min-width:220px;
+    min-height: 70px;
+    position: absolute;
+    bottom: 2rem;
+    right: -1rem;
+    color: #333;
+    background: #fff;
+    border-radius: 2.5rem;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px rgb(221, 216, 216);
+  }
+
+  .box-rating i{
+    color: rgb(255, 205, 3);
+  }
+
+  .box-rating h4{
+    margin-right: 1rem;
+  }
+/* ===========Branding ends here ==========*/
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* =============Quote section =============*/
+  .quote {
+    background: #e2e6e9;
+  }
+  
+  .quote .container {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .quote .container #quote-left {
+    flex-basis: 50%;
+  
+    padding: 10px;
+  }
+  
+  #quote-left header {
+    width: 90%;
+    font-size: x-large;
+  }
+  #quote-left .features-boxes {
+    margin-top: 20px;
+  }
+  #quote-left .features-box {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  #quote-left .features-box i {
+    background: #f2f2f2;
+    border-radius: 50%;
+    padding: 10px;
+    background: #f2f2f2;
+  }
+  #quote-left .features-box h4 {
+    font-weight: 500;
+  }
+  
+  #quote-left .features-box p {
+    font-weight: lighter;
+    font-size: 14px;
+    opacity: 80%;
+  }
+  
+   #quote-right {
+    flex-basis: 40%;
+    padding: 10px;
+  }
+  
+   #quote-right header {
+    font-size: x-large;
+    width: 90%;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+   #quote-right .form-container form input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    height: 35px;
+    border: none;
+  }
+  
+   #quote-right .form-container form input[type="text"]:focus,
+  input[type="email"]:focus {
+    border: none;
+    outline: none;
+  }
+  
+   #quote-right .form-container form .input-box {
+    margin-bottom: 2px;
+  }
+  
+   #quote-right .form-container form .btn-container {
+    margin-top: 20px;
+  }
+  
+   #quote-right .form-container form .btn-primary {
+    width: 150px;
+    background: #ff6433;
+    outline: none;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  #quote-right .form-container form button a {
+    color: #f2f2f2;
+    font-weight: 700;
+  }
+
+
+
+
+
+
+
+  /* Process questions */
+  
+  #process .container {
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #process #process-left {
+    flex-basis: 40%;
+    padding: 10px;
+    align-self: center;
+  }
+  
+   #process-left header {
+    font-size: x-large;
+    width: 75%;
+    margin-bottom: 10px;
+  }
+  
+   #process-left p {
+    color: #1e1b1b;
+    font-size: 14px;
+    opacity: 90%;
+  }
+  
+  #process-left .btn-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+  }
+  
+  #process-left  .btn-primary {
+    background: #ff6433;
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+  
+  #process-left  .btn-primary a {
+    color: #f2f2f2;
+    font-weight: 700;
+  }
+  
+   #process-right {
+    padding: 10px;
+    /* border: 1px solid #333; */
+    flex-basis: 50%;
+    display: block;
+  }
+  
+  .process-box i {
+    border: none;
+    background: #661ce7;
+    border-radius: 50%;
+    padding: 15px;
+    color: #f2f2f2;
+    position: relative;
+    min-width: 40px;
+    min-height: 40px;
+    overflow: hidden;
+    text-align: center;
+    
+  }
+  
+  .process-box i .circle-2 {
+    background: #af9dcf;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -15px;
+    left: 7px;
+    opacity: 100%;
+    z-index: 1;
+    overflow: hidden;
+  
+    /* This didn't turn out well after all  :D */
+  }
+  
+  /* .process-box i .circle-3{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      top: 48px;
+      right: auto;
+      background: #fff;
+  
+      opacity: 0%;
+  }  to cover up the overflow of box-2 but it didn't work*/
+  
+  .process-boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .process-box h2 {
+    font-size: large;
+    word-spacing: 1px;
+    font-weight: 500;
+  }
+  
+  .process-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .process-box p {
+    font-size: 14px;
+  }
+  .process-box .border {
+    margin-top: 1px;
+    padding: 0px 50px;
+    border-left: 2px dashed rgb(240, 11, 11);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: fit-content;
+  }
+  
+  .process-box .none {
+    margin-top: 5px;
+    padding: 3px 50px;
+    margin-left: 10px;
+    border-left: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  /* ==========Offer section =============*/
+  #offer {
+    background: #f2f2f2;
+  }
+  
+  #offer .container {
+    padding: 30px 50px;
+    border: none;
+  }
+  
+  #offer header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  #offer  header h5 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #1e1b1b;
+  }
+  
+  #offer  header h2 {
+    color: #1e1b1b;
+    font-weight: 700;
+    font-size: x-large;
+  }
+  
+  #offers-grid {
+    width: 80%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    gap: 4px;
+  }
+  
+  #offers-grid .offer-box {
+    background: #fff;
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: none;
+  }
+  
+   .offer-box h3 {
+    font-size: 17px;
+    color: #1e1b1b;
+    font-weight: 400;
+  }
+  
+  #offers-grid .offer-box.highlight {
+    background: #ff6433;
+  }
+  
+  #offers-grid .offer-box.highlight h3 {
+    color: #f2f2f2;
+  }
+  
+  #offer .more {
+    display: flex;
+    justify-content: right;
+    width: 90%;
+  }
+  
+  #offer .more h4 {
+    font-weight: 300;
+    font-size: small;
+  }
+
+
+
+
+
+
+
+
+
+
+  /* ============Call to Action section ============= */
+  
+  #cta img {
+    max-width: 600px;
+    height: 100%;
+  }
+  
+  #cta {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* border: 2px solid #333; */
+  }
+  
+  .cta-content,
+  .img-left {
+    grid-row: 1/4;
+  }
+  
+   .cta-content {
+    background: #ff6433;
+    color: #f2f2f2;
+    padding: 50px;
+    grid-column: 2/5;
+  }
+  
+  .cta-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  
+  .cta-content .btn-container {
+    margin-top: 10px;
+  }
+  
+  .cta-content .btn-dark {
+    background: #1e1b1b;
+    padding: 10px;
+    width: 120px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .btn-dark a {
+    color: #f2f2f2;
+  }
+  
+  #cta .img-left {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  
+  #cta .img-right,
+  .cta-content {
+    grid-row: 1/2;
+  }
+  
+  #cta .img-right {
+    grid-column: 5;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ==========Experience Section ================ */
+  #experience {
+    background: #f2f2f2;
+  }
+  
+  #experience .container {
+    padding: 20px;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  #experience  .number-box {
+    /* border: 1px solid #333; */
+    text-align: center;
+  }
+  
+  #experience  .number-box h3 {
+    color: #661ce7;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 5px;
+  }
+  
+  #experience .number-box h6 {
+    color: #1e1b1b;
+    opacity: 80%;
+    font-weight: lighter;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  /* =============Brands section =============== */
+  /* #brands-support {
+    /* background: #f2f2f2; */
+
+  
+  #brands-support h3{
+      font-size: 1.5em;
+  }
+  
+  #brands-support .container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #brands-support  #brand-grid {
+    /* border: 2px solid #333; */
+    width: 80%;
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: repeat(5, 2fr);
+    padding: 20px;
+    gap: 2em;
+  }
+  
+  #brand-grid .brand-box {
+    /* border: 2px solid #00D289;  
+      to show the gap between each box*/
+    padding: 5px;
+  }
+  
+  #brand-grid .brand-box h6 {
+    font-size: 14px;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
